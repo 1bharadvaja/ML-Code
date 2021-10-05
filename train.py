@@ -28,7 +28,7 @@ def main():
 	restore_ckpt = True if restore else False
 
 	data = []
-	data_files = glob.glob('/Users/thema/OneDrive/Desktop/ML_Code/png_data/training/LR/*.png')
+	data_files = glob.glob('/Users/thema/Desktop/ML_Code/png_data/training/LR/*.png')
 	label = []
 
 	for myData in data_files:
@@ -45,7 +45,7 @@ def main():
 		img1 = img1.crop((left, top, right, bottom))
 		img1_array = np.asarray(img1)
 		data.append(img1_array)
-		hr_img = Image.open('/Users/thema/OneDrive/Desktop/ML_Code/png_data/training/HR/' + basename)
+		hr_img = Image.open('/Users/thema/Desktop/ML_Code/png_data/training/HR/' + basename)
 		hr_img = hr_img.crop((left, top, right, bottom))
 		hr_array = np.asarray(hr_img)
 		label.append(hr_array)

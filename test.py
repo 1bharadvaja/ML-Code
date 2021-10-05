@@ -21,11 +21,11 @@ def main():
     #test_data = f.get('LR')
     #test_label = f.get('SR')
 
-    x = Image.open('/Users/thema/OneDrive/Desktop/ML_Code/png_data/testing/LR/MarginDefault_0014bscan_0142.png')
+    x = Image.open('/Users/thema/Desktop/ML_Code/png_data/testing/LR/MarginDefault_0014bscan_0142.png')
     x1 = np.asarray(x)
     test_data = x1[np.newaxis, :, :, np.newaxis]
 
-    y = Image.open('/Users/thema/OneDrive/Desktop/ML_Code/png_data/testing/HR/MarginDefault_0014bscan_0142.png')
+    y = Image.open('/Users/thema/Desktop/ML_Code/png_data/testing/HR/MarginDefault_0014bscan_0142.png')
     y1 = np.asarray(y)
     test_label = y1[np.newaxis, :, :, np.newaxis]
 
