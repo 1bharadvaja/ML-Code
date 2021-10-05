@@ -1,0 +1,7 @@
+*.png
+png_data
+/DATASET
+/log
+/Network
+/saved_images
+*.pyc
